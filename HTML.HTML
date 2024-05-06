@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owl Carousel Slider</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+</head>
+<body>
+
+<div class="owl-carousel">
+    <div class="item"><h1>Repaint and Reflow</h1></div>
+    <div class="item"><h1>Impact of JavaScript on Page Load Speed and Performance</h1></div>
+    <div class="item"><h1>Minification of Scripts</h1></div>
+    <div class="item"><h1>JS Web Worker</h1></div>
+    <div class="item"><h1>Sources:</h1><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction">MDN Web Docs - Document Object Model</a><br><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop">MDN Web Docs - Event Loop</a></div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            items: 1,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true
+        });
+    });
+</script>
+
+</body>
+</html>
