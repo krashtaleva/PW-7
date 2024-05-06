@@ -1,35 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Owl Carousel Slider</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Owl Carousel Slider</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.theme.default.min.css">
 </head>
 <body>
 
 <div class="owl-carousel">
-    <div class="item"><h1>Repaint and Reflow</h1></div>
-    <div class="item"><h1>Impact of JavaScript on Page Load Speed and Performance</h1></div>
-    <div class="item"><h1>Minification of Scripts</h1></div>
-    <div class="item"><h1>JS Web Worker</h1></div>
-    <div class="item"><h1>Sources:</h1><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction">MDN Web Docs - Document Object Model</a><br><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop">MDN Web Docs - Event Loop</a></div>
+  <div class="item"> Impact of JavaScript on Page Load Speed and Performance:
+    - JavaScript can impact page load speed and performance in several ways. Excessive or poorly optimized JavaScript code can slow down the loading of a webpage, leading to longer wait times for users. It can also affect the responsiveness of the page and consume more memory, especially on mobile devices with limited resources.
+    
+    
+    </div>
+    <div class="item">Repaint and Reflow:
+        - Repaint: When changes are made to the visual properties of an element (such as color or visibility), the browser needs to repaint that element on the screen. This process involves updating the pixels on the screen without changing the layout.
+        - Reflow: Reflow is a more complex process where the browser recalculates the layout of the entire page due to changes in the DOM structure or styles. It involves calculating the size and position of all elements on the page, which can be resource-intensive.
+        
+        
+        </div>
+  <div class="item">Minification of Scripts:
+    - Minification is the process of removing unnecessary characters (like whitespace, comments, and line breaks) from JavaScript code without affecting its functionality. This results in a smaller file size, making the script more compact and efficient. Minification helps reduce the download time of scripts, improves page load speed, and reduces bandwidth usage.
+    </div>
+  <div class="item">JS Web Worker:
+    - A JS Web Worker is a mechanism in JavaScript that allows for running scripts in the background separate from the main execution thread. Web Workers are useful for performing tasks that are computationally intensive or time-consuming without blocking the main UI thread. They enable multi-threading in JavaScript, improving performance by utilizing parallel processing for tasks like complex calculations, data processing, or heavy computations.</div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
 <script>
-    $(document).ready(function(){
-        $(".owl-carousel").owlCarousel({
-            items: 1,
-            loop: true,
-            autoplay: true,
-            autoplayTimeout: 3000,
-            autoplayHoverPause: true
-        });
+  $(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+      items: 1,
+      loop: true,
+      autoplay: true,
+      autoplayTimeout: 5000
     });
+  });
 </script>
 
 </body>
